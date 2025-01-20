@@ -12,7 +12,7 @@ GEMINI_API_KEY = "AIzaSyAVgOz95HROmUSl1qjdJ3nOydjOUy51OpM"  # Replace with your 
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Initialize Gemini 1.5 Flash model
-model = genai.GenerativeModel("gemini-1.5-flash")  # Updated to Gemini 1.5 Flash
+model = genai.GenerativeModel("gemini-1.5-flash")  
 
 # Step 1: Extract text from the PDF using pdfplumber (optimized for large files)
 def extract_text_from_pdf(pdf_path, chunk_size=10):
